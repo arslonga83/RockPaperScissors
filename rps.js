@@ -21,20 +21,14 @@ function computerResult() {
 function playRound (playerSelection, computerSelection) {
     if (playerSelection.toLowerCase() === 'rock') {
         if (computerSelection === 3) {
-             
             let roundResult = 'win';
             console.log('You win! Rock breaks Scissors.')
-         //   console.log(roundResult);
-            win = win + 1;
-         //   console.log(win)        
+            win = win + 1;       
         }
         else if (computerSelection === 2) {
-            
             let roundResult = 'loss';
             console.log('You lose. Paper covers Rock');
-         //   console.log(roundResult);
-            loss = loss + 1;
-         //   console.log(loss)     
+            loss = loss + 1;     
         }
         else if (computerSelection === 1) {
             console.log('It\'s a tie!')
@@ -44,9 +38,7 @@ function playRound (playerSelection, computerSelection) {
         if (computerSelection === 3) {   
             let roundResult = 'loss';
             console.log('You lose. Scissors cut paper.');
-        //    console.log(roundResult);
-            loss = loss + 1;
-        //    console.log(loss)   
+            loss = loss + 1;  
         }
         else if (computerSelection === 2) {
             console.log('It\'s a tie!');
@@ -54,9 +46,7 @@ function playRound (playerSelection, computerSelection) {
         else if (computerSelection === 1) {    
             let roundResult = 'win';
             console.log('You win! Paper covers Rock');
-         //   console.log(roundResult);
-            win = win + 1;
-         //   console.log(win)    
+            win = win + 1;   
         }
     }
     else if (playerSelection.toLowerCase() === 'scissors') {
@@ -66,17 +56,18 @@ function playRound (playerSelection, computerSelection) {
         else if (computerSelection === 2) {    
             let roundResult='win';
             console.log('You win! Scissors cut paper');
-         //   console.log(roundResult);
-            win = win + 1;
-         //   console.log(win)    
+            win = win + 1;   
         }
         else if (computerSelection === 1) {
             let roundResult='loss';
             console.log('You lose. Rock breaks scissors.');
-         //   console.log(roundResult);
-            loss = loss + 1;
-        //    console.log(loss)   
+            loss = loss + 1;  
         } 
+    }
+    else {
+        let roundResult = 'loss';
+        console.log('Oops! You lose this round.');
+        loss = loss + 1;
     }
 }
 
@@ -94,6 +85,7 @@ function playGame () {
 }
 
 //here's the final game which will report results
+console.log('Let\'s play Rock, Paper, Scissors! Enter your selections at the prompt.')
 playGame();
 console.log ('');
 console.log('Wins = ' + win + '. Losses = ' + loss + '.');
@@ -106,6 +98,9 @@ else if (loss > win) {
 else if (win = loss) {
     console.log('The game is a tie!')
 }
+console.log('');
+console.log('Thanks for playing! Refresh the page to play again.')
+
 
 
 
