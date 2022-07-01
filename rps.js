@@ -28,7 +28,7 @@ computerPlay();
    }
 
 //for testing
-let playerSelection = "paper"
+let playerSelection = prompt('Rock, Paper, or Scissors?')
 let computerSelection = randomNum
 //
 
