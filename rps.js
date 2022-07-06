@@ -1,3 +1,24 @@
+const rock = document.querySelector('#rock');
+const paper = document.querySelector('#paper');
+const scissors = document.querySelector('#scissors');
+
+rock.addEventListener('click', () => {
+    let playerSelection = 'rock';
+    console.log(playerSelection);
+})
+
+paper.addEventListener('click', () => {
+    let playerSelection = 'paper';
+    console.log(playerSelection);
+})
+
+scissors.addEventListener('click', () => {
+    let playerSelection = 'scissors';
+    console.log(playerSelection);
+})
+
+
+
 
 //Makes a random play choice for the computer
 function computerPlay() {
@@ -6,7 +27,7 @@ function computerPlay() {
 
 //Announces the computer play
 function computerResult() {
-   if (randomNum === 1) {
+    if (randomNum === 1) {
         console.log('Computer plays Rock');
     }
     else if (randomNum === 2) {
@@ -14,7 +35,7 @@ function computerResult() {
     }
     else if (randomNum === 3) {
         console.log('Computer plays Scissors');
-   }
+    }
 }
 
 //one play round - prints winners in console based on test selections above
@@ -72,17 +93,17 @@ function playRound (playerSelection, computerSelection) {
 }
 
 //this will play 5 rounds
-let win = 0;
-let loss = 0;
-function playGame () {
-  for (let i = 0; i < 5; i++) {
-    computerPlay();
-    let playerSelection = prompt('Rock, Paper, or Scissors?');
-    let computerSelection = randomNum;
-    computerResult();
-    playRound(playerSelection, computerSelection);
-  }
-}
+//let win = 0;
+//let loss = 0;
+//function playGame () {
+//    for (let i = 0; i < 5; i++) {
+//        computerPlay();
+//        let playerSelection = prompt('Rock, Paper, or Scissors?');
+//        let computerSelection = randomNum;
+//        computerResult();
+//        playRound(playerSelection, computerSelection);
+//    }
+//}
 
 //here's the final game which will report results
 console.log('Let\'s play Rock, Paper, Scissors! Enter your selections at the prompt.')
