@@ -1,0 +1,42 @@
+body {
+    padding: 16px;
+    background-color: grey;
+}
+
+#buttonContainer {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+}
+
+button {
+    padding: 16px;
+    font-weight: bold;
+    font-size: 24px;
+    cursor: pointer;
+    background-color:darkgrey;
+    border: 2px solid black;
+    
+
+} 
+
+img {
+    display: flex;
+    width: 250px;
+    height: 200px;
+    margin: 8px;
+}
+
+#textContainer {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 18px;
+}
